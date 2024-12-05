@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Piano</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="title">Web Piano</h1>
+      <div class="display" id="noteDisplay">Current Note: - | Volume: 0.5</div>
+    </div>
+    <div class="piano" id="piano"></div>
+    <div class="controls">
+      <select id="songSelect">
+        <option value="">Select a song</option>
+        <option value="twinkle" selected>Twinkle Twinkle Little Star</option>
+        <option value="happy">Happy Birthday</option>
+        <option value="ode">Ode to Joy</option>
+      </select>
+      <button id="playButton">Play</button>
+      <label for="volumeControl">Volume:</label>
+      <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.5">
+      <label for="tempoControl">Tempo (ms):</label>
+      <input type="range" id="tempoControl" min="100" max="1000" step="50" value="500">
+      <button class="theme-toggle" id="themeToggle">Toggle Dark Mode</button>
+    </div>
+  </div>
+</body>
+
+</html>
